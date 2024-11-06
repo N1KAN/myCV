@@ -5,34 +5,39 @@ html, body {
     background-color: #ECF0F1; /* Hintergrundfarbe für die gesamte Seite */
 }
 
+/* Container für die gesamte Body-Div */
 .body-container {
     display: flex; /* Flexbox aktivieren */
     align-items: center; /* Zentriert die Elemente vertikal */
-    justify-content: flex-start; /* Links ausrichten */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
     padding: 20px; /* Innenabstand */
     max-width: 1200px; /* Maximale Breite für große Bildschirme */
     margin: 0 auto; /* Zentriert den Container */
     margin-top: 100px; /* Abstand oben */
     margin-bottom: 100px;
-    flex-wrap: wrap; /* Verhindert Überlappung auf kleineren Bildschirmen */
+    flex-wrap: wrap; /* Verhindert Überlappung auf kleinen Bildschirmen */
+    gap: 20px; /* Abstand zwischen Bild und Text */
+    text-align: center; /* Text zentrieren für die gesamte Container */
 }
 
+/* Gestaltet das Profilbild */
 .rounded-image {
     border-radius: 1000px; /* Abgerundete Ecken */
     border: 5px solid #2C3E50; /* Dunkelblauer Rand */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Schatten für den 3D-Effekt */
-    width: 150px; /* Feste Breite für das Bild */
-    height: 150px; /* Feste Höhe */
-    margin-right: 40px; /* Abstand rechts vom Bild zum Text */
+    width: 450px; /* Feste Breite für das Bild auf größeren Bildschirmen */
+    height: 450px; /* Feste Höhe */
+    object-fit: cover; /* Verhindert Verzerrung und passt das Bild in den Container */
 }
 
+/* Textcontainer für die Beschreibung */
 .text-container {
     display: block; /* Flexbox entfernen für mehr Kontrolle */
     max-width: 100%; /* Maximale Breite für den Textcontainer erhöhen */
-    text-align: left; /* Linksbündiger Text für bessere Lesbarkeit */
-    margin-top: 20px; /* Abstand zum Bild auf kleineren Bildschirmen */
+    text-align: center; /* Text zentrieren */
 }
 
+/* Stil für den Textabschnitt */
 .text-container p {
     margin: 10px 0; /* Abstand oben und unten für den Paragraphen */
     font-size: 20px; /* Schriftgröße für den Paragraphen erhöhen */
@@ -42,18 +47,24 @@ html, body {
     width: 100%; /* 100% Breite, um sicherzustellen, dass der Text den verfügbaren Platz nutzt */
 }
 
+/* Stil für die Überschrift h1 */
 h1 {
     margin: 0px;
     font-size: 3em; /* Schriftgröße für h1 erhöhen */
     color: #2C3E50; /* Dunkelblau für die Überschrift */
+    text-align: center; /* Zentriert die Überschrift */
+    width: 100%; /* Stellt sicher, dass die Überschrift den gesamten Raum nutzt */
 }
 
+/* Stil für die Überschrift h2 */
 h2 {
     margin: 0px;
     font-size: 1.75em; /* Schriftgröße für h2 erhöhen */
     color: #7F8C8D; /* Ein helleres Dunkelblau oder Grau für die h2 */
+    text-align: center; /* Zentriert die h2 */
 }
 
+/* Stil für den Button */
 button {
     width: 100%; /* Breite des Buttons */
     background-color: #FFD700; /* Goldfarbe */
@@ -66,6 +77,7 @@ button {
     transition: background-color 0.3s ease, transform 0.2s ease; /* Sanfte Übergänge */
 }
 
+/* Hover-Effekte für den Button */
 button:hover {
     background-color: #FFC300; /* Dunkleres Gold beim Hover */
     transform: translateY(-2px); /* Leichte Anhebung beim Hover */
@@ -73,31 +85,35 @@ button:hover {
 
 /* Responsives Design für kleinere Bildschirme */
 @media (max-width: 768px) {
+    /* Stellt sicher, dass das Bild über dem Text erscheint */
     .body-container {
         flex-direction: column; /* Bild und Text untereinander anordnen */
         align-items: center; /* Zentriert den Inhalt */
         justify-content: center; /* Verhindert zu viel Abstand */
     }
 
+    /* Bildgröße anpassen */
     .rounded-image {
-        width: 120px; /* Bildgröße anpassen */
-        height: 120px; /* Höhe des Bildes anpassen */
+        width: 150px; /* Bildgröße auf mobilen Geräten */
+        height: 150px; /* Höhe des Bildes anpassen */
         margin-right: 0; /* Abstand rechts entfernen */
-        margin-bottom: 20px; /* Abstand nach unten auf mobilen Geräten */
+        margin-bottom: 20px; /* Abstand nach unten */
     }
 
+    /* Textzentrierung und Anpassungen für mobile Geräte */
     .text-container {
         text-align: center; /* Text zentrieren auf mobilen Geräten */
     }
 
     h1 {
-        font-size: 2em; /* Schriftgröße für h1 anpassen */
+        font-size: 2.5em; /* Schriftgröße für h1 anpassen */
     }
 
     h2 {
-        font-size: 1.25em; /* Schriftgröße für h2 anpassen */
+        font-size: 1.5em; /* Schriftgröße für h2 anpassen */
     }
 
+    /* Button-Anpassungen für mobile Geräte */
     button {
         width: 80%; /* Button-Breite anpassen */
         font-size: 16px; /* Schriftgröße für den Button anpassen */
