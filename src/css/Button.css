@@ -9,6 +9,14 @@
     align-items: center;
     padding: 15px 0;
     color: #FFFFFF;
+    visibility: hidden; /* Standardmäßig unsichtbar */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.footer-button.visible {
+    visibility: visible; /* Sichtbar, wenn am Ende der Seite */
+    opacity: 1; /* Volle Sichtbarkeit */
 }
 
 .footer-button button {
@@ -22,11 +30,10 @@
 }
 
 .footer-button button:hover {
-    color: #FFD700; /* Gold color on hover */
-    transform: scale(1.05); /* Slight zoom on hover */
+    color: #FFD700; /* Goldene Farbe beim Hover */
+    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
 }
 
 .footer-button button:focus {
-    outline: none; /* Remove default focus outline */
+    outline: none; /* Entfernt den Fokusrahmen */
 }
-
