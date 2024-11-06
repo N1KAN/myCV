@@ -2,6 +2,7 @@
 html, body {
     margin: 0; /* Entfernt den Standardmargin */
     height: 100%; /* Setzt die Höhe auf 100% */
+    width: 100%;
     background-color: #ECF0F1; /* Hintergrundfarbe für die gesamte Seite */
 }
 
