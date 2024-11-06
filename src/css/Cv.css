@@ -3,20 +3,20 @@
     display: flex; /* Flexbox aktivieren */
     flex-direction: column; /* Vertikale Anordnung der Elemente */
     align-items: flex-start; /* Linksbündig ausrichten */
-    padding: 40px; /* Innenabstand in Prozent für responsives Design */
+    padding: 5%; /* Innenabstand in Prozent für responsives Design */
     margin: 20px auto; /* Zentriert den Container */
     border-radius: 5px; /* Abgerundete Ecken */
-    width: 100%; /* Volle Breite des Containers */
+    width: 90%; /* Volle Breite des Containers */
     max-width: 1200px; /* Maximale Breite für große Bildschirme */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Schatten hinzufügen */
-    height: 100vh; /* Automatische Höhe */
+    height: auto; /* Höhe passt sich dem Inhalt an */
     overflow: auto; /* Ermöglicht das Scrollen, wenn der Inhalt über die Höhe hinausgeht */
 }
 
 .button-body-container h3 {
     margin: 0; /* Setzt den Abstand auf 0 für den Titel */
     color: #ECF0F1; /* Schriftfarbe für h3 */
-    font-size: 2.5em; /* Schriftgröße für h3 erhöht */
+    font-size: 2.5em; /* Schriftgröße für h3 */
     cursor: pointer; /* Zeiger für klickbare Titel */
     transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Übergangseffekte */
 }
@@ -129,14 +129,20 @@
 }
 
 /* Responsive Anpassungen */
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .textbox {
         width: 48%; /* Textboxen nebeneinander anordnen */
     }
 }
 
+@media (min-width: 768px) {
+    .textbox {
+        width: 32%; /* Textboxen nebeneinander anordnen */
+    }
+}
+
 @media (min-width: 1024px) {
     .textbox {
-        width: 32%; /* Textboxen auf großen Bildschirmen kleiner anordnen */
+        width: 24%; /* Textboxen auf großen Bildschirmen kleiner anordnen */
     }
 }
