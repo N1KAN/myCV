@@ -1,0 +1,72 @@
+.kontakt-container {
+    color: #ECF0F1; /* Textfarbe */
+    min-height: 100vh; /* Mindestens die volle Höhe des Viewports */
+    padding: 20px 0; /* Reduziertes Padding oben und unten */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Inhalte am oberen Rand ausrichten */
+    align-items: center;
+}
+
+.kontakt-content {
+    text-align: center; /* Zentriert den Text */
+    margin: 20px 0; /* Reduziertes Margin oben und unten */
+}
+
+.karten-container {
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht das Umbrechen der Karten */
+    justify-content: space-between; /* Karten gleichmäßig verteilen */
+    width: 100%; /* Vollständige Breite nutzen */
+    max-width: 1200px; /* Maximalbreite des Containers */
+    gap: 20px; /* Abstand zwischen den Karten */
+    margin-top: 20px; /* Abstand zwischen Kontakt-Text und Karten */
+}
+
+.karte {
+    background-color: #34495E; /* Dunkler Hintergrund für die Karten */
+    border-radius: 8px; /* Abgerundete Ecken */
+    padding: 30px 20px; /* Innenabstand für die Karten */
+    flex: 1 1 30%; /* Flexibles Layout mit Basisbreite von 30% */
+    min-width: 250px; /* Minimale Breite für die Karten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für die Karten */
+    transition: transform 0.3s; /* Übergangseffekt */
+    color: #ECF0F1; /* Textfarbe für die Karten */
+    text-align: center; /* Zentriert den Text innerhalb der Karte */
+}
+
+.karte:hover {
+    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+}
+
+.karte h2 {
+    color: #FFD700; /* Goldene Farbe für die Überschrift */
+}
+
+.karte p, .karte a {
+    color: #ECF0F1; /* Textfarbe für Links und Paragraphen */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+.karte a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+.karte i {
+    color: #FFD700; /* Gelbe Farbe für die Icons */
+    font-size: 24px; /* Größe der Icons */
+    margin-bottom: 10px; /* Abstand unter den Icons */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .karte {
+        flex: 1 1 45%; /* Karten breiter bei Tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .karte {
+        flex: 1 1 100%; /* Karten vollflächig bei Mobilgeräten */
+    }
+}
