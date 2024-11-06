@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './komponenten/Header'
 import Body from './komponenten/Body'
+import Cv from './komponenten/Cv'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <>
     <Header></Header>
     <Body></Body>
+    <Cv></Cv>
     </>
   )
 }

@@ -14,21 +14,23 @@ html, body {
     margin: 0 auto; /* Zentriert den Container */
     margin-top: 100px; /* Abstand oben */
     margin-bottom: 100px;
+    flex-wrap: wrap; /* Verhindert Überlappung auf kleineren Bildschirmen */
 }
 
 .rounded-image {
     border-radius: 1000px; /* Abgerundete Ecken */
     border: 5px solid #2C3E50; /* Dunkelblauer Rand */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Schatten für den 3D-Effekt */
-    width: auto; /* Feste Breite für das Bild */
-    height: auto; /* Höhe automatisch, um das Seitenverhältnis beizubehalten */
+    width: 150px; /* Feste Breite für das Bild */
+    height: 150px; /* Feste Höhe */
     margin-right: 40px; /* Abstand rechts vom Bild zum Text */
 }
 
 .text-container {
     display: block; /* Flexbox entfernen für mehr Kontrolle */
-    max-width: 1200px; /* Maximale Breite für den Textcontainer erhöhen */
+    max-width: 100%; /* Maximale Breite für den Textcontainer erhöhen */
     text-align: left; /* Linksbündiger Text für bessere Lesbarkeit */
+    margin-top: 20px; /* Abstand zum Bild auf kleineren Bildschirmen */
 }
 
 .text-container p {
@@ -37,7 +39,6 @@ html, body {
     color: #34495E; /* Eine dunkelgraue Farbe für den Text */
     line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
     text-align: justify; /* Blocksatz für den Text */
-    /* Optional: fügen Sie eine zusätzliche Breite hinzu, um einen weiteren Zeilenumbruch zu vermeiden */
     width: 100%; /* 100% Breite, um sicherzustellen, dass der Text den verfügbaren Platz nutzt */
 }
 
@@ -72,11 +73,33 @@ button:hover {
 
 /* Responsives Design für kleinere Bildschirme */
 @media (max-width: 768px) {
-    .rounded-image {
-        width: 70%; /* Bildgröße auf kleineren Bildschirmen anpassen */
-        margin-right: 10px; /* Abstand auf kleineren Bildschirmen anpassen */
+    .body-container {
+        flex-direction: column; /* Bild und Text untereinander anordnen */
+        align-items: center; /* Zentriert den Inhalt */
+        justify-content: center; /* Verhindert zu viel Abstand */
     }
-    h1, h2 {
-        font-size: 1.5em; /* Schriftgrößen anpassen */
+
+    .rounded-image {
+        width: 120px; /* Bildgröße anpassen */
+        height: 120px; /* Höhe des Bildes anpassen */
+        margin-right: 0; /* Abstand rechts entfernen */
+        margin-bottom: 20px; /* Abstand nach unten auf mobilen Geräten */
+    }
+
+    .text-container {
+        text-align: center; /* Text zentrieren auf mobilen Geräten */
+    }
+
+    h1 {
+        font-size: 2em; /* Schriftgröße für h1 anpassen */
+    }
+
+    h2 {
+        font-size: 1.25em; /* Schriftgröße für h2 anpassen */
+    }
+
+    button {
+        width: 80%; /* Button-Breite anpassen */
+        font-size: 16px; /* Schriftgröße für den Button anpassen */
     }
 }

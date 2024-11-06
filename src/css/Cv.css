@@ -1,0 +1,105 @@
+.button-body-container {
+    background-color: #34495E; /* Hintergrundfarbe für den Button-Container */
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Vertikale Anordnung der Elemente */
+    align-items: flex-start; /* Linksbündig ausrichten */
+    padding: 40px; /* Innenabstand für den Container */
+    margin: 20px auto; /* Zentriert den Container */
+    border-radius: 5px; /* Abgerundete Ecken */
+    width: 97.5%; /* Breite auf 97,5% setzen */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Schatten hinzufügen */
+    height: 100vh; /* Höhe auf 100% des Viewports setzen */
+    max-width: 100%;
+    overflow: auto; /* Ermöglicht das Scrollen, wenn der Inhalt über die Höhe hinausgeht */
+}
+
+.button-body-container h3 {
+    margin: 0; /* Setzt den Abstand auf 0 für den Titel */
+    color: #ECF0F1; /* Schriftfarbe für h3 */
+    font-size: 2.5em; /* Schriftgröße für h3 erhöht */
+    cursor: pointer; /* Zeiger für klickbare Titel */
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Übergangseffekte */
+}
+
+.button-body-container h3:hover {
+    color: #FFD700; /* Goldene Farbe beim Hover */
+    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+    text-shadow: 0 2px 10px rgba(255, 215, 0, 0.5); /* Goldener Schatten */
+}
+
+.separator {
+    border: none; /* Kein Rand */
+    height: 1px; /* Höhe des Trennstrichs */
+    background-color: #FFFFFF; /* Farbe des Trennstrichs */
+    width: 100%; /* Breite des Trennstrichs */
+    margin: 20px 0; /* Abstand über und unter dem Trennstrich */
+}
+
+.education-timeline, .experience-list {
+    display: flex; /* Flexbox für die Timeline aktivieren */
+    flex-direction: column; /* Vertikale Anordnung der Bildungseinheiten */
+    width: 100%; /* Breite auf 100% setzen */
+}
+
+.education-item, .experience-item {
+    display: flex; /* Flexbox für die einzelnen Elemente aktivieren */
+    flex-direction: column; /* Elemente untereinander anordnen */
+    width: 100%; /* Breite auf 100% setzen */
+    margin: 20px 0; /* Abstand zwischen den Bildungseinheiten vergrößert */
+    color: #FFFFFF; /* Schriftfarbe für die Bildungseinheiten */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Übergangseffekte */
+    position: relative; /* Position relativ für das Pseudo-Element */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Schatten hinzufügen */
+}
+
+.education-item:hover, .experience-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Leichte Hervorhebung bei Hover */
+    border-radius: 5px; /* Abgerundete Ecken beim Hover */
+    transform: scale(1.02); /* Leichte Vergrößerung beim Hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Intensivierter Schatten beim Hover */
+}
+
+.date {
+    font-weight: bold; /* Fettdruck für das Datum */
+    font-size: 1.5em; /* Schriftgröße für das Datum erhöht */
+    color: #FFFFFF;
+}
+
+.note {
+    font-style: italic; /* Kursivschrift für zusätzliche Notizen */
+    font-size: 1.2em; /* Schriftgröße für Notizen erhöht */
+    margin-left: 10px; /* Abstand zur Beschreibung */
+}
+
+.project-title {
+    font-weight: bold; /* Fettdruck für die Projekttitel */
+    font-size: 1.5em; /* Schriftgröße für die Projekttitel erhöht */
+    margin-top: 10px; /* Abstand oben für Projekttitel */
+}
+
+.experience-item p {
+    font-size: 1.2em; /* Schriftgröße für Beschreibungen erhöht */
+    margin-left: 10px; /* Abstand links für Beschreibungen */
+}
+
+.education-item:focus, .experience-item:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5); /* Subtile, halbtransparente Umrandung */
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column; /* Stack the span and link vertically */
+    align-items: flex-start; /* Align content to the left */
+}
+
+.project-description a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px; /* Add a little spacing if needed */
+}
+.experience-item a:hover {
+    color: #FFFFFF; /* Change to white on hover */
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5); /* Glow effect on hover */
+    text-decoration: underline; /* Underline link when hovered */
+}
