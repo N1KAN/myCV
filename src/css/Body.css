@@ -1,0 +1,82 @@
+/* Stil für den gesamten Hintergrund */
+html, body {
+    margin: 0; /* Entfernt den Standardmargin */
+    height: 100%; /* Setzt die Höhe auf 100% */
+    background-color: #ECF0F1; /* Hintergrundfarbe für die gesamte Seite */
+}
+
+.body-container {
+    display: flex; /* Flexbox aktivieren */
+    align-items: center; /* Zentriert die Elemente vertikal */
+    justify-content: flex-start; /* Links ausrichten */
+    padding: 20px; /* Innenabstand */
+    max-width: 1200px; /* Maximale Breite für große Bildschirme */
+    margin: 0 auto; /* Zentriert den Container */
+    margin-top: 100px; /* Abstand oben */
+    margin-bottom: 100px;
+}
+
+.rounded-image {
+    border-radius: 1000px; /* Abgerundete Ecken */
+    border: 5px solid #2C3E50; /* Dunkelblauer Rand */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Schatten für den 3D-Effekt */
+    width: auto; /* Feste Breite für das Bild */
+    height: auto; /* Höhe automatisch, um das Seitenverhältnis beizubehalten */
+    margin-right: 40px; /* Abstand rechts vom Bild zum Text */
+}
+
+.text-container {
+    display: block; /* Flexbox entfernen für mehr Kontrolle */
+    max-width: 1200px; /* Maximale Breite für den Textcontainer erhöhen */
+    text-align: left; /* Linksbündiger Text für bessere Lesbarkeit */
+}
+
+.text-container p {
+    margin: 10px 0; /* Abstand oben und unten für den Paragraphen */
+    font-size: 20px; /* Schriftgröße für den Paragraphen erhöhen */
+    color: #34495E; /* Eine dunkelgraue Farbe für den Text */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+    text-align: justify; /* Blocksatz für den Text */
+    /* Optional: fügen Sie eine zusätzliche Breite hinzu, um einen weiteren Zeilenumbruch zu vermeiden */
+    width: 100%; /* 100% Breite, um sicherzustellen, dass der Text den verfügbaren Platz nutzt */
+}
+
+h1 {
+    margin: 0px;
+    font-size: 3em; /* Schriftgröße für h1 erhöhen */
+    color: #2C3E50; /* Dunkelblau für die Überschrift */
+}
+
+h2 {
+    margin: 0px;
+    font-size: 1.75em; /* Schriftgröße für h2 erhöhen */
+    color: #7F8C8D; /* Ein helleres Dunkelblau oder Grau für die h2 */
+}
+
+button {
+    width: 100%; /* Breite des Buttons */
+    background-color: #FFD700; /* Goldfarbe */
+    color: #2C3E50; /* Textfarbe */
+    border: none; /* Kein Rand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 10px 20px; /* Innenabstand: 10px oben und unten, 20px links und rechts */
+    font-size: 18px; /* Schriftgröße */
+    cursor: pointer; /* Zeiger ändert sich beim Hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Sanfte Übergänge */
+}
+
+button:hover {
+    background-color: #FFC300; /* Dunkleres Gold beim Hover */
+    transform: translateY(-2px); /* Leichte Anhebung beim Hover */
+}
+
+/* Responsives Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .rounded-image {
+        width: 70%; /* Bildgröße auf kleineren Bildschirmen anpassen */
+        margin-right: 10px; /* Abstand auf kleineren Bildschirmen anpassen */
+    }
+    h1, h2 {
+        font-size: 1.5em; /* Schriftgrößen anpassen */
+    }
+}
