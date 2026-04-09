@@ -7,18 +7,13 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import Kontakt from './komponenten/Kontakt.jsx';
 
 const router = createBrowserRouter(
   [
     {
       path: "/",
       element: <App />,
-    },
-    {
-      path: "/contact",
-      element: <Kontakt></Kontakt>,  // Hier könnte deine Kontakt-Komponente sein
-    },
+    }
   ],
   {
     basename: "/myCV",  // Setzt den Basis-URL-Pfad für alle Routen

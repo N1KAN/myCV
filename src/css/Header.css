@@ -11,6 +11,9 @@ body {
     align-items: center; /* Vertikale Zentrierung */
     padding: 30px 15px; /* Innenabstand */
     margin: 0px;
+    position: sticky; /* Hält den Header am oberen Bildschirmrand fest */
+    top: 0; /* Abstand von oben ist 0 */
+    z-index: 1000; /* Stellt sicher, dass der Header immer ÜBER dem restlichen Content liegt */
 }
 
 .logo {

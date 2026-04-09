@@ -1,0 +1,147 @@
+/* src/css/Projekte.css */
+.projects-main-container {
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 5%;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-main-container h3 {
+    margin: 0 0 30px 0;
+    color: #ECF0F1;
+    font-size: 2.5em;
+    cursor: default;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.projects-main-container h3:hover {
+    color: #FFD700;
+    transform: scale(1.02);
+    text-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-icon-wrapper {
+    font-size: 3em;
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-card h4 {
+    color: #FFFFFF;
+    font-size: 1.4em;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Verhindert, dass der Badge vertically-centered wird, wenn Text umbricht */
+    gap: 10px;
+    min-height: 70px; /* Erzwingt eine gleiche Höhe für einzeilige und zweizeilige Titel */
+}
+
+.semester-badge {
+    background-color: #27ae60;
+    color: white;
+    font-size: 0.6em;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    white-space: nowrap; /* Verhindert Zeilenumbrüche innerhalb des Badges */
+}
+
+.project-desc {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: auto; /* Schiebt die nachfolgenden Elemente (Skills & Buttons) als gemeinsamen Footer an den unteren Rand */
+    padding-bottom: 30px; /* Sorgt für einen garantierten Abstand zwischen Text und den Skills */
+}
+
+.project-skills {
+    margin-bottom: 20px;
+    min-height: 120px; /* Erzwingt eine gleiche Höhe für die Skills-Box, damit die Header auf einer Linie sind */
+}
+
+.project-skills strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.project-links-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #34495E;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex: 1; /* Makes buttons equal width if there are multiple */
+}
+
+.demo-link {
+    background-color: #27ae60;
+    color: white;
+}
+
+.demo-link:hover {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.project-link:hover {
+    background-color: #FFFFFF;
+    color: #34495E;
+}
+
+.project-link i {
+    margin-right: 8px;
+}

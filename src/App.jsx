@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './komponenten/Header'
 import Body from './komponenten/Body'
+import Skills from './komponenten/Skills'
+import Projekte from './komponenten/Projekte'
 import Cv from './komponenten/Cv'
 import Button from './komponenten/Button'
 
@@ -14,6 +16,8 @@ function App() {
     <>
     <Header></Header>
     <Body></Body>
+    <Skills></Skills>
+    <Projekte></Projekte>
     <Cv></Cv>
     <Button></Button>
     </>

@@ -1,0 +1,4 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Ca. die Höhe des Headers, damit der Titel nicht abgeschnitten wird */
+}
