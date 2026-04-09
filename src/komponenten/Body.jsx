@@ -1,7 +1,6 @@
 import React from "react"
 import '../css/Body.css'
 import profilBild from '../pictures/profil.jpeg'
-import { Link } from 'react-router-dom';
 export default function Body() {
     return (
       <div className="body-container" id="ueber-mich">
@@ -18,9 +17,6 @@ export default function Body() {
                 <br /><br />
                 Ich interessiere mich leidenschaftlich dafür, innovative Lösungen zu entwickeln und mein Wissen stetig zu erweitern. Ein besonderer Fokus von mir liegt auf der Automatisierung von monotonen Aufgaben sowie der Erstellung effizienter Workflows. Mich begeistert der Gedanke, durch smarte Programmierungen wertvolle Zeit zu sparen, damit man sich voll und ganz auf die wirklich wichtigen und wertschöpfenden Themen fokussieren kann.
             </p>
-            <Link to="/contact">
-                    <button>Kontakt aufnehmen</button>
-            </Link>
         </div>
       </div>
     );
